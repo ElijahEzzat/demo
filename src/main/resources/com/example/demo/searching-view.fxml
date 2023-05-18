@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="892.0" style="-fx-background-color: #2061c1;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.SearchingController">
+    <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="330.0" layoutY="14.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="232.0" text="IR Porject 2023" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold" size="29.0" />
+            </font>
+        </Label>
+        <ComboBox id="combo" fx:id="comboBox" layoutX="606.0" layoutY="251.0" prefHeight="51.0" prefWidth="151.0" />
+        <Label layoutX="628.0" layoutY="225.0" text="Choose Index" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="238.0" prefHeight="26.0" prefWidth="195.0" text="Query Pre-Processing" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Label>
+        <CheckBox fx:id="Tokenization" layoutX="40.0" layoutY="286.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="151.0" text="Tokenization" textFill="WHITE">
+            <font>
+                <Font size="17.0" />
+            </font></CheckBox>
+        <CheckBox fx:id="Normalization" layoutX="40.0" layoutY="337.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="135.0" text="Normalization" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font></CheckBox>
+        <CheckBox fx:id="StopWords" layoutX="224.0" layoutY="286.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="119.0" text="Stop-Words" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font></CheckBox>
+        <CheckBox fx:id="Lemetization" layoutX="224.0" layoutY="337.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="135.0" text="Lemetization" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font></CheckBox>
+        <CheckBox fx:id="Stemming" layoutX="408.0" layoutY="337.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="108.0" text="Stemming" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font></CheckBox>
+      <TextField fx:id="textSearch" layoutX="200.0" layoutY="65.0" prefHeight="59.0" prefWidth="285.0" promptText="type here to search">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnSearch" layoutX="593.0" layoutY="78.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="119.0" text="Search" />
+        <Button fx:id="BackToHome" alignment="CENTER" contentDisplay="CENTER" layoutX="350.0" layoutY="420.0" mnemonicParsing="false" onAction="#BackButton" prefHeight="55.0" prefWidth="100.0" text="Back">
+            <font>
+                <Font name="System Bold Italic" size="21.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
